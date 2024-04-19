@@ -3,9 +3,9 @@
 using namespace std;
 
 //function prototypes
-double square();
-double rectangle();
-double triangle();
+void square();
+void rectangle();
+void triangle();
 
 int main()
 {
@@ -35,26 +35,47 @@ int main()
     } while(checker == 0);
 
 }
+
 //square function
-double square()
+void square()
 {
     //prompt input
     cout << "Enter the length of the square: ";
     double length;
     cin >> length;
-
-    return (length * length);
+    //display output
+    cout << "The area is " << (length * length) << endl;
 
 }
 
 //rectangle function
-double rectangle()
+void rectangle()
 {
+    //prompt input
+    cout << "Enter the length of the rectangle: ";
+    double length;
+    cin >> length;
+    cout << "Enter the width of the rectangle: ";
+    double width;
+    cin >> width;
+
+    //display output
+    cout << "The area is " << (length * width) << endl;
 
 }
 
 //triangle function
-double triangle()
+void triangle()
 {
+    //prompt input
+    cout << "Enter the height of the triangle: ";
+    double height;
+    cin >> height;
+    cout << "Enter the base of the triangle: ";
+    double base;
+    cin >> base;
+
+    //display output
+    cout << "The area is " << ((1/2) * base * height) << endl;
 
 }
