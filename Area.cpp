@@ -76,6 +76,6 @@ void triangle()
     cin >> base;
 
     //display output
-    cout << "The area is " << ((1/2) * base * height) << endl;
+    cout << "The area is " << (0.5 * base * height) << endl;
 
 }
