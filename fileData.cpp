@@ -5,7 +5,7 @@ using namespace std;
 
 //function prototyoe
 void vowels(string s);
-
+void wordCount(string w);
 // string reverse(string r);
 
 int main()
@@ -20,9 +20,8 @@ int main()
     //function for for vowels
     vowels(fileData);
 
-    //reverse function
-    // string reversedString = reverse(fileData);
-    // cout << reversedString << endl;
+    //function to count words
+    wordCount(fileData);
 }
 
 void vowels(string s)
@@ -52,3 +51,20 @@ void vowels(string s)
 
 }
 
+void wordCount(string w)
+{
+    int numberOfWords = 1;
+    
+
+   for(int i = 0; i < w.length(); i++)
+    {
+        char checker = w.at(i);
+        
+        if(isspace(checker))
+            numberOfWords++;
+        
+    }
+
+   cout << "There are "<<numberOfWords <<" words in the text file" <<endl;
+
+}
