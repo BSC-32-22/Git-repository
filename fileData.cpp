@@ -5,7 +5,8 @@ using namespace std;
 
 //function prototyoe
 void vowels(string s);
-string reverse(string r);
+
+// string reverse(string r);
 
 int main()
 {
@@ -21,8 +22,8 @@ int main()
     vowels(fileData);
 
     //reverse function
-    string reversedString = reverse(fileData);
-    cout << reversedString << endl;
+    // string reversedString = reverse(fileData);
+    // cout << reversedString << endl;
 }
 
 void vowels(string s)
@@ -48,9 +49,6 @@ void vowels(string s)
                     
         }
         cout << numberOfVowels << endl;
-    }
-
-    
-        
-    
+    }           
 }
+
