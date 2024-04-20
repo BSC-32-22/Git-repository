@@ -7,7 +7,7 @@ using namespace std;
 void vowels(string sentence);
 void wordCount(string sentence);
 string reverse(string sentence);
-
+string capitalization(string sentence);
 
 
 int main()
@@ -28,7 +28,14 @@ int main()
     //function to reverse
     string output;
     output = reverse(fileData);
+    cout << "The reversed statement is:\n";
     cout << output << endl;
+
+    //function capitalization
+    string result;
+    result = capitalization(fileData);
+    cout << "The statement with capitalized 2nd letters will be:\n";
+    cout << result << endl;
 
     //
 }
@@ -87,4 +94,24 @@ string reverse(string sentence)
     }
 
     return reversed;
+}
+
+string capitalization(string sentence)
+{
+    string result;
+    string checker;
+    
+    for(int i = 0; i < sentence.length(); i++)
+    {
+         if(isalpha(sentence.at(i)))
+            checker += sentence.at(i);
+         else if(isspace(sentence.at(i)))
+         {
+            toupper(checker.at(1));
+            result += checker;
+            checker.clear();
+         }     
+    }
+
+    return result;
 }
