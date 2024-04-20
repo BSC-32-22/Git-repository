@@ -3,10 +3,12 @@
 
 using namespace std;
 
-//function prototyoe
-void vowels(string s);
-void wordCount(string w);
-// string reverse(string r);
+//function prototypes
+void vowels(string sentence);
+void wordCount(string sentence);
+string reverse(string sentence);
+
+
 
 int main()
 {
@@ -17,20 +19,27 @@ int main()
     string fileData;
     getline(input,fileData);
 
-    //function for for vowels
+    //function for vowels
     vowels(fileData);
 
     //function to count words
     wordCount(fileData);
+
+    //function to reverse
+    string output;
+    output = reverse(fileData);
+    cout << output << endl;
+
+    //
 }
 
-void vowels(string s)
+void vowels(string sentence)
 {
     int numberOfVowels = 0;
 
-    for(int i = 0; i < s.length(); i++)
+    for(int i = 0; i < sentence.length(); i++)
     {
-        char checker = s.at(i);
+        char checker = sentence.at(i);
         switch (checker){
 
             case 'a': 
@@ -51,14 +60,14 @@ void vowels(string s)
 
 }
 
-void wordCount(string w)
+void wordCount(string sentence)
 {
     int numberOfWords = 1;
     
 
-   for(int i = 0; i < w.length(); i++)
+   for(int i = 0; i < sentence.length(); i++)
     {
-        char checker = w.at(i);
+        char checker = sentence.at(i);
         
         if(isspace(checker))
             numberOfWords++;
@@ -67,4 +76,15 @@ void wordCount(string w)
 
    cout << "There are "<<numberOfWords <<" words in the text file" <<endl;
 
+}
+
+string reverse(string sentence)
+{
+    string reversed;
+    for(int i = (sentence.length() - 1); i >= 0; i--)
+    {
+        reversed += sentence.at(i);
+    }
+
+    return reversed;
 }
