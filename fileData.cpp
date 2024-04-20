@@ -16,7 +16,6 @@ int main()
     //contents to string
     string fileData;
     getline(input,fileData);
-    cout << fileData;
 
     //function for for vowels
     vowels(fileData);
@@ -47,8 +46,9 @@ void vowels(string s)
             case 'U':
                         numberOfVowels++;
                     
-        }
-        cout << numberOfVowels << endl;
-    }           
+        } 
+    }
+    cout <<"There are " << numberOfVowels << " vowels in the text file." << endl;       
+
 }
 
