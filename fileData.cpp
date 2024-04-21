@@ -110,7 +110,7 @@ string capitalization(string sentence)
             for(int j = 0; j < checker.length(); j++)
             {
                 if(j == 1)
-                   checkAssist += toupper(checker.length());
+                   checkAssist += toupper(checker.at(j));
                 else
                     checkAssist += checker.at(j);
             }
