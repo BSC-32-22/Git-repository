@@ -100,17 +100,24 @@ string capitalization(string sentence)
 {
     string result;
     string checker;
-    
+    string checkAssist;
     for(int i = 0; i < sentence.length(); i++)
     {
          if(isalpha(sentence.at(i)))
             checker += sentence.at(i);
          else if(isspace(sentence.at(i)))
-         {
-            toupper(checker.at(1));
-            result += checker;
+        {
+            for(int j = 0; j < checker.length(); j++)
+            {
+                if(j == 1)
+                   checkAssist += toupper(checker.length());
+                else
+                    checkAssist += checker.at(j);
+            }
+            result += checkAssist + " ";
             checker.clear();
-         }     
+            checkAssist.clear(); 
+        }   
     }
 
     return result;
