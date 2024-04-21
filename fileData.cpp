@@ -28,13 +28,13 @@ int main()
     //function to reverse
     string output;
     output = reverse(fileData);
-    cout << "The reversed statement is:\n";
+    cout << "The reversed statement is: ";
     cout << output << endl;
 
     //function capitalization
     string result;
     result = capitalization(fileData);
-    cout << "The statement with capitalized 2nd letters will be:\n";
+    cout << "The statement with capitalized 2nd letters will be: ";
     cout << result << endl;
 
     //
