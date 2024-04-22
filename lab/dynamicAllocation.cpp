@@ -19,4 +19,11 @@ int main()
     cout << "Value of the integer is : " << *dynamicInt << "\n"
          << "the string is: " << *dynamicStr << endl;
 
+    //deleting 
+    delete dynamicInt;
+    delete dynamicStr;
+
+
+    return 0;
+
 }
