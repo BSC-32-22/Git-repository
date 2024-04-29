@@ -7,19 +7,17 @@ class Rectangle
     private: 
             float length;
             float width;
-
-    Rectangle()
-    {
-        length = 0;
-        width = 0;
-    }
-    ~Rectangle()
-    {
-
-    }
-    
     public:
+        Rectangle()
+        {
+            length = 0;
+            width = 0;
+        }
+        ~Rectangle()
+        {
 
+        }
+//accesor methods
         //set length
         void setLength(float newLength)
         {
@@ -51,7 +49,8 @@ class Rectangle
 
 int main()
 {
-    
+    Rectangle rectangleObject;
+
 
     return 0;
 }
