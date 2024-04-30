@@ -1,42 +1,38 @@
-#include <iostream>
 
-using namespace std;
+#include "Rectangle.h"
 
-class Rectangle
-{
     
 
-        Rectangle()
-        {
-            length = 0;
-            width = 0;
-        }
-        ~Rectangle();
+Rectangle ::Rectangle()
+{
+    length = 0;
+    width = 0;
+}
+
+
 //accesor methods
         //set length
-        void setLength(float newLength)
+        void Rectangle::setLength(float newLength)
         {
             length = newLength;
         }
         //set width
-        void setWidth(float newWidth)
+        void Rectangle::setWidth(float newWidth)
         {
             width = newWidth;
         }
         //get length
-        float getLength()
+        float Rectangle::getLength()
         {
             return length;
         }
         //get width
-        float getWidth()
+        float Rectangle::getWidth()
         {
             return width;
         }
         //get area
-        float getArea()
+        float Rectangle::getArea()
         {
             return (length * width);
         }
-
-};
