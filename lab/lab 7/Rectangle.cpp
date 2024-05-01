@@ -2,7 +2,7 @@
 #include "Rectangle.h"
 
     
-//defini member functions
+//define member functions
 
 Rectangle ::Rectangle()
 {

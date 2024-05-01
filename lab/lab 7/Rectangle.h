@@ -10,7 +10,13 @@ class Rectangle
 
     public:
             Rectangle();
-        
+            
+            Rectangle(float newLength, float newWidth)
+            {
+                length = newLength;
+                width = newWidth;
+            }
+
             ~Rectangle();
             
             //accesor methods
