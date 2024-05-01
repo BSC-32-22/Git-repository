@@ -27,12 +27,10 @@ int main()
     
     //give length
     cout << "enter length of the rectangle: ";
-    float length;
     cin >> length;
 
     //give width
     cout << "\nenter width of the rectangle: ";
-    float width;
     cin >> width;
   
     //instantiation
