@@ -39,7 +39,7 @@ int main()
     Rectangle rectangleObject2 = Rectangle(length,width);
 
     //output Area
-    cout << "the Area of the rectangle is: " << rectangleObject.getArea(); 
+    cout << "the Area of the rectangle is: " << rectangleObject2.getArea(); 
 
     return 0;
 }
