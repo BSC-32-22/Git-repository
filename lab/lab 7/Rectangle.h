@@ -11,11 +11,7 @@ class Rectangle
     public:
             Rectangle();
             
-            Rectangle(float newLength, float newWidth)
-            {
-                length = newLength;
-                width = newWidth;
-            }
+            Rectangle(float newLength, float newWidth
 
             ~Rectangle();
             
