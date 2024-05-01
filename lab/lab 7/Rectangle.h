@@ -11,7 +11,7 @@ class Rectangle
     public:
             Rectangle();
             
-            Rectangle(float newLength, float newWidth
+            Rectangle(float newLength, float newWidth);
 
             ~Rectangle();
             
