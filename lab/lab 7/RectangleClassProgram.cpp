@@ -36,7 +36,7 @@ int main()
     cin >> width;
   
     //instantiation
-    Rectangle rectangleObject = Rectangle(length,width);
+    Rectangle rectangleObject2 = Rectangle(length,width);
 
     //output Area
     cout << "the Area of the rectangle is: " << rectangleObject.getArea(); 
