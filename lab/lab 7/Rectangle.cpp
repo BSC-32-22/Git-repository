@@ -9,6 +9,11 @@ Rectangle ::Rectangle()
     length = 0;
     width = 0;
 }
+Rectangle :: Rectangle(float newLength, float newWidth)
+{
+        length = newLength;
+        width = newWidth;
+}
     //set length
     void Rectangle::setLength(float newLength)
     {
