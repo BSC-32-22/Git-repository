@@ -1,4 +1,4 @@
-#include "ClassesInNamespace"
+#include "ClassesInNamespace.h"
 
 using namespace shapes;
 
