@@ -34,9 +34,9 @@ namespace shapes
 
                 //access methods
                 void setBase(float newBase);
-                void setLength(float newLength);
+                void setHeight(float newLength);
                 float getBase();
-                float getLength();
+                float getHeight();
 
     };
 
