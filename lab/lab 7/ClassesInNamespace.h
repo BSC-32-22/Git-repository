@@ -32,45 +32,7 @@ namespace shapes
                 }
     };
 
-    class Triangle
-    {
-        private:
-                float base;
-                float height;
-        public:
-                Triangle()
-                {
-                    base = 0;
-                    height = 0;
-                }
-                //overload
-                Triangle(float newBase, float newHeight)
-                {
-                    base = newBase;
-                    height = newHeight;
-                }
-                //destructor
-                ~Triangle();
-
-                //access methods
-                void setBase(float newBase)
-                {
-                    base = newBase;
-                }
-                void setHeight(float newHeight)
-                {
-                    height = newHeight;
-                }
-                float getBase()
-                {
-                    return base;
-                }
-                float getHeight()
-                {
-                    return height;
-                }
-
-    };
+    
 
     class Circle
     {

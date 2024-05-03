@@ -12,7 +12,7 @@ void circleShape();
 int main()
 {
 
-    int checker == 0;
+    int checker = 0;
 
      do{   
             cout<<"1.Calculate the area of a square\n" 
@@ -23,7 +23,7 @@ int main()
             int choice;
             cin >> choice;
             //vet decision
-            switch(choice)
+            switch(choice){
                 
                 case 1: squareShape();
 
@@ -32,6 +32,7 @@ int main()
                 case 3: circleShape();
 
                 case 4: checker++;
+            }
 
         }while(checker == 0);
 
