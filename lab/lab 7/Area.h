@@ -1,5 +1,6 @@
-#include "ClassesInNamespace.h"
-
+#include "Square.h"
+#include "Triangle.h"
+#include "Circle.h"
 using namespace shapes;
 
 class Area
