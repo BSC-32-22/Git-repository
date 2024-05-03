@@ -9,15 +9,27 @@ namespace shapes
                 float sideLength;
         
         public:
-                Square();
+                Square()
+                {
+                    sideLength = 0;
+                }
                 //overloaded
-                Square(float newSideLength);
+                Square(float newSideLength)
+                {
+                    sideLength = newSideLength;
+                }
                 //destructor
                 ~Square();
 
                 //accessor methods
-                void setSideLength(float newSideLength);
-                float getSideLength();
+                void setSideLength(float newSideLength)
+                {
+                    sideLength = newSideLength;
+                }
+                float getSideLength()
+                {
+                    return sideLength;
+                }
     };
 
     class Triangle
@@ -26,17 +38,37 @@ namespace shapes
                 float base;
                 float height;
         public:
-                Triangle();
+                Triangle()
+                {
+                    base = 0;
+                    height = 0;
+                }
                 //overload
-                Triangle(float newBase, float newHeight);
+                Triangle(float newBase, float newHeight)
+                {
+                    base = newBase;
+                    height = newHeight;
+                }
                 //destructor
                 ~Triangle();
 
                 //access methods
-                void setBase(float newBase);
-                void setHeight(float newLength);
-                float getBase();
-                float getHeight();
+                void setBase(float newBase)
+                {
+                    base = newBase;
+                }
+                void setHeight(float newHeight)
+                {
+                    height = newHeight;
+                }
+                float getBase()
+                {
+                    return base;
+                }
+                float getHeight()
+                {
+                    return height;
+                }
 
     };
 
@@ -45,15 +77,27 @@ namespace shapes
         private:
                 float radius;
         public:
-                Circle();
+                Circle()
+                {
+                    radius = 0;
+                }
                 //overload
-                Circle(float radius);
+                Circle(float newRadius)
+                {
+                    radius = newRadius;
+                }
                 //destructor
                 ~Circle();
 
                 //access method
-                void setRadius(float newRadius);
-                float getRadius();
+                void setRadius(float newRadius)
+                {
+                    radius = newRadius;
+                }
+                float getRadius()
+                {
+                    return radius;
+                }
     };
 
 };
