@@ -9,27 +9,16 @@ namespace shapes
                 float sideLength;
         
         public:
-                Square()
-                {
-                    sideLength = 0;
-                }
+                Square();
                 //overloaded
-                Square(float newSideLength)
-                {
-                    sideLength = newSideLength;
-                }
+                Square(float newSideLength);
                 //destructor
                 ~Square();
 
                 //accessor methods
-                void setSideLength(float newSideLength)
-                {
-                    sideLength = newSideLength;
-                }
-                float getSideLength()
-                {
-                    return sideLength;
-                }
+                void setSideLength(float newSideLength);
+                float getSideLength();
+                
     };
 
 
