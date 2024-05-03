@@ -7,26 +7,15 @@ namespace shapes
         private:
                 float radius;
         public:
-                Circle()
-                {
-                    radius = 0;
-                }
+                Circle();
                 //overload
-                Circle(float newRadius)
-                {
-                    radius = newRadius;
-                }
+                Circle(float newRadius);
                 //destructor
                 ~Circle();
 
                 //access method
-                void setRadius(float newRadius)
-                {
-                    radius = newRadius;
-                }
-                float getRadius()
-                {
-                    return radius;
-                }
+                void setRadius(float newRadius);
+                float getRadius();
+       
     };
 };
