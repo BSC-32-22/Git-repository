@@ -1,4 +1,4 @@
-#include "AreaDeclaration.h"
+#include "Area.h"
 
 //function definitions
 
@@ -21,6 +21,6 @@ static float AreaCircle(Circle circleObject)
 {
     radius = circleObject.getRadius();
     radius *= radius;
-    
+
     return (3.14 * radius);
 }

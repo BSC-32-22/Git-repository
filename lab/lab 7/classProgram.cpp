@@ -1,6 +1,6 @@
 #include <iostream>
 #include "ClassesInNamespace.h"
-#include "AreaDeclaration.h"
+#include "Area.h"
 using namespace std;
 using namespace shapes;
 
