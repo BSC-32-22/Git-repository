@@ -26,6 +26,9 @@ class  Person
 
     //overloading < operator
     bool operator < (const Person& otherPerson);
+
+    //conversion operator
+    operator int();
     
     private:
     float mWeight;

@@ -18,20 +18,25 @@ int  main()
         cout <<  "This is the same person" << endl;
     }
 
-    if	(Jane	!=  John)
+    if	(Jane != John)
     {
         cout	<<  "This is NOT the same person"	<< endl;
     }
 
-    if	(Jane	<  John)
+    if	(Jane < John)
     {
         cout	<<  "Jane  is younger than  John"	<<  endl;
     }
 
-    if	(John	>  Jane)
+    if	(John > Jane)
     {
         cout	<<  "John  is  older than  Jane"	<<  endl;
     }
+
+    //using conversion operator function
+    int johnAge = John;
+    cout <<  "John's Age:  " <<  johnAge << endl;
+
 
 
     return	0;

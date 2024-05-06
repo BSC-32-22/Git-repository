@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Person.h"
 
 using namespace std;
@@ -9,7 +10,7 @@ Person::Person()
     cout << "input first name: ";
     cin >> mFirstName;
     //get age
-    cout << "input age: "
+    cout << "input age: ";
     cin >> mAge;
     //get weight
     cout << "input weight: ";
@@ -21,6 +22,11 @@ Person::Person(string newName,float newWeight)
 {
     mFirstName = newName;
     mWeight = newWeight;
+}
+
+Person::~Person()
+{
+
 }
 
 float Person::operator + (const Person& otherPerson)
@@ -45,7 +51,7 @@ bool Person::operator == (const Person& otherperson)
 bool Person::operator != (const Person& otherPerson)
 {
     bool result;
-    if (this->mFirstName == otherPerson.mFirstName)
+    if (this->mFirstName != otherPerson.mFirstName)
     result = true;
     else
     result = false;
@@ -74,4 +80,9 @@ bool Person::operator < (const Person& otherPerson)
     result = false;
 
     return result;
+}
+
+Person::operator int()
+{
+    return mAge;
 }
