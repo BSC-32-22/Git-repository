@@ -12,6 +12,26 @@ int  main()
 
     cout << "Total weight:  " <<  totalWeight <<  endl;
 
+    //using overload operator functions
+    if	(Jane	==	John)
+    {
+        cout	«  "This is the same person"	« endL;
+    }
+
+    if	(Jane	!=  John)
+    {
+        cout	<<  "This is NOT the same person"	< <endL;
+    }
+
+    if	(Jane	<  John){
+    cout	<<  "Jane  is younger than  John"	<<  endl;
+    }
+
+    if	(John	>  Jane){
+    cout	<<  "John  is  older than  Jane"	«  endl;
+    }
+
+
     return	0;
 }
 

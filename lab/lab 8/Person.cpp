@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//default constructor
 Person::Person()
 {
     //get name
@@ -14,4 +15,62 @@ Person::Person()
     cout << "input weight: ";
     cin >> mWeight;
    
+}
+//overoaded constructor
+Person::Person(float newWeight)
+{
+    mWeight = newWeight;
+}
+
+float Person::operator + (const Person& otherPerson)
+{
+
+   float result = this-> mWeight + otherPerson.mWeight;
+
+   return result;
+}
+
+bool Person::operator == (const Person& otherperson)
+{
+    bool result;
+    if(this->mFirstName == otherperson.mFirstName)
+    result = true;
+    else
+    result = false;
+
+    return result;
+}
+
+bool Person::operator != (const Person& otherPerson)
+{
+    bool result;
+    if (this->mFirstName == otherPerson.mFirstName)
+    result = true;
+    else
+    result = false;
+
+    return result;
+}
+
+bool Person::operator > (const Person& otherPerson)
+{
+    bool result;
+    if (this->mAge > otherPerson.mAge)
+    result = true;
+    else
+    result = false;
+
+    return result;
+}
+
+
+bool Person::operator < (const Person& otherPerson)
+{
+    bool result;
+    if (this->mAge < otherPerson.mAge)
+    result = true;
+    else
+    result = false;
+
+    return result;
 }
