@@ -9,7 +9,7 @@ Box();
 
 Box(const double newLength,const double newBreadth,const double newHeight);
 
-—Box();
+~Box();
 
 double GetVolume();
 void  SetLength(double  len); 

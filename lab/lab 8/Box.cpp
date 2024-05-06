@@ -17,7 +17,7 @@ newHeight)
     height	=  newHeight;
 }
 
-Box::—Box()	{
+Box::~Box()	{
     //empty
 }
 

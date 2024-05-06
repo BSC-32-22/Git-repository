@@ -28,14 +28,14 @@ int  main()
 
     //  volume of  box	2
     volume	=  Box2.GetVolume();
-    cout	<<  "Volume of Box2	: "	<<	volume	«endl;
+    cout	<<  "Volume of Box2	: "	<<	volume << endl;
 
     // Add two object  as  follows:
     Box3	=  Box1	+  Box2;
 
     //  volume of  box	3
     volume	=  Box3.GetVolume();
-    cout	«  "Volume of Box3	: "	«  volume	«endl;
+    cout << "Volume of Box3	: " <<  volume <<endl;
 
     return 	0; 
 }
