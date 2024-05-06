@@ -30,6 +30,10 @@ class  Person
     //conversion operator
     operator int();
     
+    operator string();
+
+    operator float();
+    
     private:
     float mWeight;
     string mFirstName; 
