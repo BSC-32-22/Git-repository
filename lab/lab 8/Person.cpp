@@ -17,8 +17,9 @@ Person::Person()
    
 }
 //overoaded constructor
-Person::Person(float newWeight)
+Person::Person(string newName,float newWeight)
 {
+    mFirstName = newName;
     mWeight = newWeight;
 }
 

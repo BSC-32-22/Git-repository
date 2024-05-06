@@ -15,7 +15,7 @@ int  main()
     //using overload operator functions
     if	(Jane	==	John)
     {
-        cout	«  "This is the same person"	« endL;
+        cout <<  "This is the same person" << endl;
     }
 
     if	(Jane	!=  John)
@@ -23,12 +23,14 @@ int  main()
         cout	<<  "This is NOT the same person"	< <endL;
     }
 
-    if	(Jane	<  John){
-    cout	<<  "Jane  is younger than  John"	<<  endl;
+    if	(Jane	<  John)
+    {
+        cout	<<  "Jane  is younger than  John"	<<  endl;
     }
 
-    if	(John	>  Jane){
-    cout	<<  "John  is  older than  Jane"	«  endl;
+    if	(John	>  Jane)
+    {
+        cout	<<  "John  is  older than  Jane"	<<  endl;
     }
 
 

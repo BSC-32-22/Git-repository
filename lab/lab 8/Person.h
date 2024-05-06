@@ -8,7 +8,7 @@ class  Person
 {
     public:
     Person();
-    Person(float  newWeight);
+    Person(string newName, float  newWeight);
 
     ~Person();
     
