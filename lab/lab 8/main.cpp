@@ -15,7 +15,7 @@ int  main()
     //  box 1  specification 
     Box1.SetLength(6.0);
     Box1.SetBreadth(7.0); 
-    Boxl.SetHeight(5.0);
+    Box1.SetHeight(5.0);
 
     //  box 2  specification 
     Box2.SetLength(12.0); 
