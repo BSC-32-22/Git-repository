@@ -20,7 +20,7 @@ int  main()
 
     if	(Jane	!=  John)
     {
-        cout	<<  "This is NOT the same person"	< <endL;
+        cout	<<  "This is NOT the same person"	<< endl;
     }
 
     if	(Jane	<  John)
