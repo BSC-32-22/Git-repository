@@ -1,6 +1,6 @@
 #include "Triangle.h"
 
-int Triangle: public Polygon
+int Triangle:: Area()
 {
     return mWidth * mHeight / 2;
 } 
