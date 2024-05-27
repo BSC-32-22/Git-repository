@@ -1,4 +1,6 @@
 #include "Polygon.h"
+#include <iostream>
+using namespace std;
 
 void Polygon::SetValues(int width, int height)
 {
@@ -6,7 +8,8 @@ void Polygon::SetValues(int width, int height)
     mHeight = height;
 }
 
-void Polygon::Area()
+void Polygon::PrintArea()
 {
+    
     cout << this->Area() << "\n";
 }
