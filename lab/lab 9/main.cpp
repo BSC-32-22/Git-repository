@@ -7,8 +7,7 @@ using namespace std;
 
 int main()
 {
-    Rectangle rect;
-    Triangle trgl;
+    
     
     Polygon* pPoly1 = new Rectangle(4,5);
     Polygon* pPoly2 = new Triangle(4,5);
